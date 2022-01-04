@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+--Soft-red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+--Dark-blue-photography-text: hsl(198, 62%, 26%);
+--Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White :hsl(0, 0%, 100%);
+--bg-header :rgb(68 ,192 ,252);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'barlow' ,sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+.img-desktop {
+    display: none;
+    width: 100%;
+   
+}
+
+.img-mobile {
+    width: 100%;
+   
+}
+
+.first-text {
+    position: absolute;
+    top: 14.3rem;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Fraunces' , sans-serif ;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+
+.first-section .first-text img {
+    margin-top: 5rem;
+}
+
+.headers {
+    padding-left : 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.hide {
+    opacity: 0.5;
+}
+
+.hamburger {
+    transition: all 0.4s ease;
+}
+
+.menu-mobile {
+    position: absolute;
+    top: 8rem;
+    left: 6%;
+    width: 88%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    white-space: pre-line;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 2.5rem solid white;
+    border-left:  2.5rem solid transparent;   
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3.6rem 0;
+    gap: 3.5rem;
+    background-color: white;
+}
+
+p {
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+p:hover {
+    color: var(--Very-dark-desaturated-blue);
+    cursor: pointer;
+}
+
+.contact {
+    font-size: 1.5rem;
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    background-color: var(--Yellow);
+    border-radius: 3rem;
+    cursor: pointer;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.contact:hover {
+    color: var(--Very-dark-grayish-blue);
+    background-color:hsl(52, 79%, 74%) ;
+}
+
+
+.middle-section .img-desktop {
+    display: none;
+    width: 100%;
+}
+
+.middle-section .img-mobile {
+    display: block;
+    width: 100%;
+
+}
+
+.text-block {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:  6rem 3rem;
+}
+
+.titel {
+    font-family: 'Fraunces' , sans-serif ;
+    font-weight: 900;
+    text-align:center;
+    font-size: 3.2rem;
+}
+
+.description {
+   font-size: 1.75rem;
+   text-align:center;
+   color: var(--Very-dark-grayish-blue);
+   line-height: 3rem;
+   margin:2.5rem 0 3.5rem 0;
+}
+
+.btn-wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-wrapper p {
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    color:var(--Very-dark-desaturated-blue);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 0.7rem;
+}
+
+.link-description { 
+    position: relative;
+    
+    width: 90%;
+    height: 0.7rem;
+    border-radius: 0.5rem;
+    transform: translateY(-0.7rem);
+    z-index: -1;
+    opacity: 0.5;
+    transition:  all 0.5s ease;
+}
+
+.yellow {
+    background-color: var(--Yellow);
+}
+
+.red {
+    background-color: var(--Soft-red);
+}
+
+.btn-wrapper:hover .link-description {
+    width: 100%;
+    opacity: 1;
+}
+
+.block-wrapper {
+  position: relative;
+}
+
+.block-wrapper .img-mobile{ 
+    width: 750;
+    
+}
+.block-wrapper .img-desktop {
+    width: 720;
+}
+
+.block-wrapper .text-block-overlay .titel{
+    font-family: 'Fraunces' , sans-serif ;
+    font-weight: 900;
+    text-align:center;
+    font-size: 2.8rem;
+  }
+.block-wrapper .text-block-overlay {
+    position: absolute;
+    top: 66%;
+    padding: 0 2rem;
+}
+.block-wrapper .text-block-overlay .description {
+    font-size: 1.55rem;
+    text-align: center;
+    line-height: 2.7rem;
+    margin: 2.8rem 0;
+}
+
+.green-tint {
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.blue-tint {
+    color: var(--Dark-blue-photography-text);
+}
+
+.clients-testimonials {
+    padding: 6.4rem 2rem 2rem;
+    
+}
+.clients-testimonials h2 {
+    font-family: 'Fraunces' , sans-serif ;
+    font-weight: 900;
+    text-align:center;
+    font-size: 1.5rem;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.clients-wrapper {
+    padding: 3rem 0;
+}
+
+.clients-wrapper .client {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0.6rem 0;
+
+    padding: 2.4rem 0.2rem;
+    
+}
+
+.clients-wrapper img {
+    width: 22%;
+    border-radius: 50%;
+}
+
+.testimonial {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 3.2rem;
+    color: var(--Very-dark-grayish-blue);
+    
+
+    padding: 3.4rem 0 0 0;
+}
+
+.name {
+    font-family: 'Fraunces' , sans-serif ;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--Very-dark-desaturated-blue);
+    
+    padding-top: 3.125rem;
+    
+    
+}
+
+.position {
+    font-size: 1.4rem;
+  
+    color: var(--Grayish-blue); 
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .img-desktop{
+    display: none;
+    width: 100%;
+  
+}
+
+.gallery .img-mobile{
+    width: 50%;
+    display: block;
+    flex: 50%;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding: 5.8rem 0;
+    background-color: rgb(144, 212, 197);
+    
+}
+.footer-logo {
+    width: 17rem;
+    filter: brightness(0) invert(39%) sepia(67%) saturate(323%) hue-rotate(118deg) brightness(90%) contrast(90%);
+  
+}
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+
+    list-style: none;
+    margin: 4.2rem 0;
+}
+.footer-menu a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--Dark-moderate-cyan-footer);
+  
+}
+
+a:hover {
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    list-style: none;
+
+    margin: 5rem 0 1.8rem;
+}
+
+.social-media a img:hover {
+     filter: brightness(0) invert(100%);
+}
+
+@media screen and (min-width:1440px ) {
+ 
+    .img-desktop {
+        display: block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .first-text {
+        top :19.3rem;
+        
+    }
+    .first-section .first-text h1 {
+        font-size: 6rem;
+    }
+
+    .first-section .first-text img {
+        margin-top: 9rem;
+    }
+
+    .headers {
+        position: absolute;
+        padding-left: 4.3rem;
+        padding-top: 0;
+        padding-right: 5.8rem;
+    }
+    
+    .headers .logo {
+        width: 16.5rem;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+    
+    .triangle {
+        display: none;
+    }
+    .headers .menu .menus {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .contact {
+        background-color: white;
+        cursor: pointer;
+        padding-left: 1.8rem 3rem;
+        color: var(--Very-dark-desaturated-blue);
+        margin-left: 1rem;
+        
+    }
+    .contact:hover {
+        background-color: rgb(147, 212, 245);
+        color: white;
+    }
+
+    .menus p {
+        color: white;
+        padding-left: 1rem;
+        cursor: pointer;
+    }
+    p:hover {
+        color: var(--Very-dark-grayish-blue);
+    }
+
+    .middle-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .middle-section .img-mobile {
+        display: none;
+        width: 750;
+    }
+    .middle-section .img-desktop {
+        display: block;
+        flex: 50%;
+        width: 720;
+    }
+    .text-block {
+        flex: 50%;
+        align-items: flex-start;
+    }
+    .titel {
+        font-size: 3.95rem;
+        text-align: left;
+    }
+
+    .description {
+        text-align: left;
+        font-size: 1.76rem;
+        line-height: 3rem;
+        margin: 3.2rem 0 4rem 0;
+    }
+    
+    .text-block-left {
+        padding: 0 11rem 0 16.5rem;
+    }
+    
+    .text-block-right {
+        padding: 0 16.5rem 0 11rem;
+    }
+
+    .flex-order-1{
+        order: 1;
+    }
+    .flex-order-2 {
+        order: 2;
+    }
+    .flex-order-3 {
+        order: 3;
+    }
+    .flex-order-4 {
+        order: 4;
+    }
+    .flex-order-5 {
+        order: 5;
+    }
+    .flex-order-6 {
+        order: 6;
+    }
+    
+    .block-wrapper{
+        width: 50%;
+    }
+
+    .block-wrapper .text-block-overlay {
+        padding: 0 19rem;
+    }
+
+    .clients-testimonials{
+        padding: 16rem 2rem 9.3rem;
+    }
+
+    .clients-testimonials h2 {
+        font-size: 2rem;
+    }
+    
+    .clients-testimonials .clients-wrapper {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content:  center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .clients-testimonials .clients-wrapper .client {
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 25.5%;
+        padding-top: 4.1rem;
+    }
+    .clients-testimonials .clients-wrapper .testimonial {
+        padding-top: 5.5rem;
+    }
+    .clients-testimonials .clients-wrapper .name {
+        padding-top: 6.6rem;
+    }
+
+    .gallery .img-mobile {
+        display: none;
+
+    }
+    .gallery .img-desktop {
+        display: block;
+        flex: 25%;
+        width: 25%;
+    }
+    .footer {
+        padding: 7.8rem 0 5rem;
+    }
+}
+
